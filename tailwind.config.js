@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 const plugin = require('tailwindcss/plugin')
 export default {
   mode: 'jit',
@@ -33,4 +37,5 @@ export default {
       })
     }),
   ],
-}
+};
+
